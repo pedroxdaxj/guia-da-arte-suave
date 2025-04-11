@@ -16,5 +16,5 @@ def download():
     return render_template("download.html")
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    port = int(os.environ.get("PORT", 10000))  # ← aqui usa a PORT da Render
+    app.run(host="0.0.0.0", port=port)
