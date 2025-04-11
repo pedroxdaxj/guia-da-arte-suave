@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loja de PDFs – Guia da Arte Suave 🥋</title>
+    <style>
+        body { font-family: sans-serif; background: #f2f2f2; text-align: center; padding-top: 60px; }
+        .pdf-card {
+            background: white; border-radius: 10px; width: 300px;
+            margin: 20px auto; padding: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        img { width: 100%; border-radius: 10px; }
+        a.btn {
+            display: inline-block; margin-top: 15px; padding: 10px 20px;
+            background: #28a745; color: white; text-decoration: none; border-radius: 5px;
+            font-weight: bold;
+        }
+        a.btn:hover { background: #218838; }
+    </style>
+</head>
+<body>
+    <h1>📚 Guia da Arte Suave</h1>
+    <div class="pdf-card">
+        <img src="{{ url_for('static', filename='imagens/guia_jiujitsu.png') }}" alt="Guia Jiu-Jitsu">
+        <h2>Como Começar no Jiu-Jitsu Gastando Pouco</h2>
+        <a class="btn" href="/guia-jiujitsu">Ver Detalhes</a>
+    </div>
+</body>
+</html>

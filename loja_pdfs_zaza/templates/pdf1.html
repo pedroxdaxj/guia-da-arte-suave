@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guia da Arte Suave</title>
+    <style>
+        body { font-family: sans-serif; background: #ffffff; text-align: center; padding: 50px; }
+        img { width: 250px; border-radius: 10px; }
+        a.btn {
+            background: #007bff; color: white; padding: 10px 20px;
+            text-decoration: none; border-radius: 8px;
+            display: inline-block; margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guia da Arte Suave</h1>
+    <img src="{{ url_for('static', filename='imagens/guia_jiujitsu.png') }}" alt="Capa Guia">
+    <p style="margin-top: 20px;">Dicas práticas para começar no Jiu-Jitsu gastando pouco.</p>
+
+    <h3>💰 Valor: R$ 5,00</h3>
+    <p>Faça o pagamento via Pix. Depois clique no botão abaixo:</p>
+
+    <a class="btn" href="/download">✅ Já paguei – Baixar Guia</a>
+</body>
+</html>
